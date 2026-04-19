@@ -6,7 +6,7 @@ The goal is to derive business-driven insights that support investment, operatio
 
 📖 **Read the full report on Medium**: [Airbnb Listings Analysis in NYC with SQL](https://medium.com/@ajagunalliyu/airbnb-listings-analysis-in-new-york-city-with-sql-11beb1f8b615)
 
-📊 **Interactive Dashboard**: [Explore on Power BI](https://app.powerbi.com/view?r=eyJrIjoiZDYzZjY5NWQtMmE3NS00NjAxLTlkZTgtMWRkOTA5YTkzZDg2IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9))
+📊 **Interactive Dashboard**: [Explore on Power BI](https://app.powerbi.com/view?r=eyJrIjoiZDYzZjY5NWQtMmE3NS00NjAxLTlkZTgtMWRkOTA5YTkzZDg2IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9)
 
 
 
