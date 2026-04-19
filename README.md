@@ -6,7 +6,7 @@ The goal is to derive business-driven insights that support investment, operatio
 
 📖 **Read the full report on Medium**: [Airbnb Listings Analysis in NYC with SQL](https://medium.com/@ajagunalliyu/airbnb-listings-analysis-in-new-york-city-with-sql-11beb1f8b615)
 
-📊 **Interactive Dashboard**: [Explore on Power BI](#) *(Insert actual link)*
+📊 **Interactive Dashboard**: [Explore on Power BI](https://app.powerbi.com/view?r=eyJrIjoiZDYzZjY5NWQtMmE3NS00NjAxLTlkZTgtMWRkOTA5YTkzZDg2IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9))
 
 
 
@@ -109,7 +109,7 @@ The cleaned dataset was uploaded to **Power BI**, where insights were brought to
 - Availability and engagement heatmaps
 - Filterable review and listing performance metrics
 
-**Explore the Dashboard Here**: [Power BI Link](#) *(Insert actual link)*
+**Explore the Dashboard Here**: [Power BI Link](https://app.powerbi.com/view?r=eyJrIjoiZDYzZjY5NWQtMmE3NS00NjAxLTlkZTgtMWRkOTA5YTkzZDg2IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9)
 
 ---
 
