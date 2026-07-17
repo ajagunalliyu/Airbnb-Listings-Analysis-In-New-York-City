@@ -10,8 +10,11 @@ Airbnb investors and platform operators face three recurring questions with no d
 
 
 Tools: SQL Server Management Studio (cleaning, transformation, querying), Power BI (visualization)
-Cleaning: validated lat/long to NYC bounds (40.5–40.9 / -74.25–-73.7), removed listings with minimum_nights > 365, flagged $0-priced listings, excluded neighborhoods with fewer than 10 listings, created a cleaned_listings view via ALTER VIEW
+
+Cleaning: validated lat/long to NYC bounds (40.5 – 40.9 / -74.25 – -73.7), removed listings with minimum_nights > 365, flagged $0-priced listings, excluded neighborhoods with fewer than 10 listings, created a cleaned_listings view via ALTER VIEW
+
 Categorization: grouped minimum_nights into stay-duration bands using CASE statements; segmented hosts by activity level (full-time vs. part-time)
+
 Analysis: identified high-earning neighborhoods, compared price/availability by room and host type, reviewed engagement trends by borough
 
 
