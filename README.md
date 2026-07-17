@@ -21,11 +21,15 @@ Analysis: identified high-earning neighborhoods, compared price/availability by 
 ### Key Insights
 
 
-"Tribeca, Harlem, Williamsburg, and Midtown Manhattan deliver the best investment ROI" — through a mix of high demand and premium pricing.
-"Commercial hosts dominate the highest-value zones, while entire-home listings outperform specifically in Manhattan" — room type performance is borough-dependent, not universal.
-"Shared and private rooms outperform in budget boroughs" — the winning strategy flips outside Manhattan.
-"Part-time hosts average 112 available days a year — the strongest untapped onboarding segment" — a specific, actionable target for growth teams.
-"Outer boroughs show strong engagement but lower competition" — an under-served growth opportunity distinct from the premium-zone story.
+"Tribeca, Harlem, Williamsburg, and Midtown Manhattan deliver the best investment ROI" - through a mix of high demand and premium pricing.
+
+"Commercial hosts dominate the highest-value zones, while entire-home listings outperform specifically in Manhattan" - room type performance is borough-dependent, not universal.
+
+"Shared and private rooms outperform in budget boroughs" - the winning strategy flips outside Manhattan.
+
+"Part-time hosts average 112 available days a year - the strongest untapped onboarding segment" - a specific, actionable target for growth teams.
+
+"Outer boroughs show strong engagement but lower competition" - an under-served growth opportunity distinct from the premium-zone story.
 
 
 ### Clear Recommendations
