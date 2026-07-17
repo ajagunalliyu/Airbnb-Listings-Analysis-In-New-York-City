@@ -1,129 +1,58 @@
 # Airbnb-Listings-Analysis-In-New-York-City
-## New York City Airbnb Listings Analysis (SQL + Power BI)
 
-This project presents an end-to-end data analysis of Airbnb listings in New York City using **SQL** for data cleaning and exploration, and **Power BI** for visual storytelling. 
-The goal is to derive business-driven insights that support investment, operations, and host onboarding decisions.
+Airbnb stakeholders needed to know where to invest, which hosts to support, and how room/host types actually perform across NYC - not from anecdote, but from the listings data itself. I cleaned and validated the public NYC listings dataset in SQL Server, built categorized views, and visualized the results in Power BI. The headline: Tribeca, Harlem, Williamsburg, and Midtown Manhattan offer the best ROI, commercial hosts dominate high-value zones, and the best onboarding targets are part-time hosts averaging 112 available days a year in under-served outer boroughs.
 
-📖 **Read the full report on Medium**: [Airbnb Listings Analysis in NYC with SQL](https://medium.com/@ajagunalliyu/airbnb-listings-analysis-in-new-york-city-with-sql-11beb1f8b615)
+### The Business Problem
 
-📊 **Interactive Dashboard**: [Explore on Power BI](https://app.powerbi.com/view?r=eyJrIjoiZDYzZjY5NWQtMmE3NS00NjAxLTlkZTgtMWRkOTA5YTkzZDg2IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9)
+Airbnb investors and platform operators face three recurring questions with no data-backed answer: where should new investment go, which host/room types actually perform, and which hosts should be prioritized for onboarding support. Without this, investment and growth decisions default to guesswork.
 
-
-
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Project Goal](#project-goal)
-- [Methodology](#methodology)
-- [Data Cleaning](#data-cleaning)
-- [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Insights & Recommendations](#insights--recommendations)
-- [Dashboard](#dashboard)
-- [Conclusion](#conclusion)
+### Data & Method
 
 
-
-## Project Overview
-
-This project analyzes Airbnb listings in New York City to uncover patterns in pricing, availability, host behavior, and guest engagement. 
-The dataset used is publicly available and contains rich features such as price, location, minimum nights, number of reviews, room types, and host details.
-
-Technologies used:
-- **SQL Server Management Studio (SSMS)** – for cleaning, transformation & querying
-- **Power BI** – for interactive data visualization
-- **Medium** – for full documentation and analytical narrative
+Tools: SQL Server Management Studio (cleaning, transformation, querying), Power BI (visualization)
+Cleaning: validated lat/long to NYC bounds (40.5–40.9 / -74.25–-73.7), removed listings with minimum_nights > 365, flagged $0-priced listings, excluded neighborhoods with fewer than 10 listings, created a cleaned_listings view via ALTER VIEW
+Categorization: grouped minimum_nights into stay-duration bands using CASE statements; segmented hosts by activity level (full-time vs. part-time)
+Analysis: identified high-earning neighborhoods, compared price/availability by room and host type, reviewed engagement trends by borough
 
 
+### Key Insights
 
-## Project Goal
 
-The main objectives are to answer high-value business questions such as:
-1. **Where are the best neighborhoods to invest in?**
-2. **How do different host types and room types perform?**
-3. **Which hosts or areas should be targeted for onboarding and support?**
+"Tribeca, Harlem, Williamsburg, and Midtown Manhattan deliver the best investment ROI" — through a mix of high demand and premium pricing.
+"Commercial hosts dominate the highest-value zones, while entire-home listings outperform specifically in Manhattan" — room type performance is borough-dependent, not universal.
+"Shared and private rooms outperform in budget boroughs" — the winning strategy flips outside Manhattan.
+"Part-time hosts average 112 available days a year — the strongest untapped onboarding segment" — a specific, actionable target for growth teams.
+"Outer boroughs show strong engagement but lower competition" — an under-served growth opportunity distinct from the premium-zone story.
+
+
+### Clear Recommendations
+
+
+Direct new investment toward Tribeca, Harlem, Williamsburg, and Midtown Manhattan first.
+Push entire-home inventory in Manhattan; push shared/private-room inventory in budget boroughs.
+Build a targeted onboarding campaign for part-time hosts, using top-reviewed listings as a coaching template.
+Prioritize outer-borough host recruitment where engagement is strong but supply is thin.
+
+
+Links: [Live dashboard](https://medium.com/@ajagunalliyu/airbnb-listings-analysis-in-new-york-city-with-sql-11beb1f8b615) · [Medium write-up](https://app.powerbi.com/view?r=eyJrIjoiZDYzZjY5NWQtMmE3NS00NjAxLTlkZTgtMWRkOTA5YTkzZDg2IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9)
 
 
 
-## Methodology
 
-- Data collection
-- Data Importation and Preprocessing
-- Data Cleaning and Transformation
-- Categorization using `CASE` statements (e.g., minimum night ranges)
-- Filtering for analysis relevance (e.g., `review_status = 1`, `price > 0`)
-
-- Exploratory Data Analysis
-- Insights and Recommendations
-- Visualization using Power BI
-
-
-
-## Data Cleaning
-
-Key steps included:
-- Validated latitude and longitude to ensure listings are within NYC (Lat: 40.5–40.9, Long: -74.25–-73.7)
-- Removed unrealistic values (e.g., `minimum_nights > 365`)
-- Renamed `review_exists` to `review_status` for clarity
-- Column renaming and view creation using `ALTER VIEW`
-- Logical validations for price, location, and availability
-- Outlier detection and treatment
-- Created filtered views such as `cleaned_listings` to streamline querying
-- Excluded neighborhoods with fewer than 10 listings based on Q1 of listing counts
-- Grouped `minimum_nights` into logical stay-duration categories using a `CASE` statement
-- Flagged listings with $0 pricing and handled them cautiously
-
-
-
-## Exploratory Data Analysis
-
-Several exploratory queries and transformations were performed:
-- Identified popular and high-earning neighborhoods
-- Compared price and availability by room type and host type
-- Segmented hosts based on activity (e.g., full-time vs part-time)
-- Analyzed engagement trends across boroughs
-- Checked review distribution and guest behavior patterns
-
-
-
-## Insights & Recommendations
-
-**1. Best Neighborhoods to Invest In**  
-→ *Tribeca, Harlem, Williamsburg, and Midtown Manhattan* stand out for high ROI through either demand or premium pricing.
-
-**2. Host & Room Type Performance**  
-→ Commercial hosts dominate in high-value zones.  
-→ Entire homes outperform in Manhattan; shared/private rooms do well in budget boroughs.
-
-**3. Onboarding Strategy**  
-→ Target part-time hosts (average availability = 112 days/year).  
-→ Focus on outer boroughs with strong engagement but lower competition.  
-→ Encourage new hosts to emulate top-reviewed listing strategies.
-
-
-
-## Dashboard
-
-The cleaned dataset was uploaded to **Power BI**, where insights were brought to life through interactive visuals:
-- Geographic breakdowns by borough and neighborhood
-- Price distributions by room and host types
-- Availability and engagement heatmaps
-- Filterable review and listing performance metrics
-
-**Explore the Dashboard Here**: [Power BI Link](https://app.powerbi.com/view?r=eyJrIjoiZDYzZjY5NWQtMmE3NS00NjAxLTlkZTgtMWRkOTA5YTkzZDg2IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9)
-
----
-
-## Conclusion
-
-This project demonstrates how SQL and Power BI can be used to build a complete analytical pipeline—from raw data to decision-ready insights. 
-The findings provide actionable guidance for Airbnb stakeholders on **investment decisions**, **host support**, and **platform optimization** within the New York City market.
-
-
-
-> Want to know more?  
+## Let's Connect
+ 
 > Feel free to reach out: [ajagunalliyu@gmail.com](mailto:ajagunalliyu@gmail.com)  
 > Connect with me on [LinkedIn](https://www.linkedin.com/in/alliyuajagun)  
 > Follow on [Twitter/X](https://x.com/Sayyid_Alliyu)  
 > Read more on [Medium](https://medium.com/@ajagunalliyu)  
 > 💻 Explore more projects on [GitHub](https://github.com/ajagunalliyu)
+> View [Portfolio website](https://sites.google.com/view/alliyutheanalyst/portfolio?authuser=0)
+
+
+## ⭐ Support
+
+If you found this project helpful or interesting, consider giving the repository a **star**. Your support helps increase the visibility of my work and encourages me to continue building and sharing data analytics projects.
+
+Thank you for visiting!
+
 
