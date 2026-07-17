@@ -36,9 +36,12 @@ Analysis: identified high-earning neighborhoods, compared price/availability by 
 
 
 Direct new investment toward Tribeca, Harlem, Williamsburg, and Midtown Manhattan first.
+
 Push entire-home inventory in Manhattan; push shared/private-room inventory in budget boroughs.
+
 Build a targeted onboarding campaign for part-time hosts, using top-reviewed listings as a coaching template.
-Prioritize outer-borough host recruitment where engagement is strong but supply is thin.
+
+Prioritize outer-borough host recruitment where engagement is strong, but supply is thin.
 
 
 Links: [Live dashboard](https://medium.com/@ajagunalliyu/airbnb-listings-analysis-in-new-york-city-with-sql-11beb1f8b615) · [Medium write-up](https://app.powerbi.com/view?r=eyJrIjoiZDYzZjY5NWQtMmE3NS00NjAxLTlkZTgtMWRkOTA5YTkzZDg2IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9)
