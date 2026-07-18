@@ -22,7 +22,7 @@ Analysis: identified high-earning neighborhoods, compared price/availability by 
 
 
 ### Key Insights
-![](dashboard/dashboard1.png)
+![](dashboard/Dashboard1.png)
 
 "Tribeca, Harlem, Williamsburg, and Midtown Manhattan deliver the best investment ROI" - through a mix of high demand and premium pricing.
 
