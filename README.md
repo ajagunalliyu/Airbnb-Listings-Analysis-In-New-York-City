@@ -9,42 +9,31 @@ Airbnb investors and platform operators face three recurring questions with no d
 
 ### Data & Method
 
-
-Tools: SQL Server Management Studio (cleaning, transformation, querying), Power BI (visualization)
-
-Cleaning: validated lat/long to NYC bounds (40.5 – 40.9 / -74.25 – -73.7), removed listings with minimum_nights > 365, flagged $0-priced listings, excluded neighborhoods with fewer than 10 listings, created a cleaned_listings view via ALTER VIEW
-
-Categorization: grouped minimum_nights into stay-duration bands using CASE statements; segmented hosts by activity level (full-time vs. part-time)
-
-Analysis: identified high-earning neighborhoods, compared price/availability by room and host type, reviewed engagement trends by borough
+* Tools: SQL Server Management Studio (cleaning, transformation, querying), Power BI (visualization)
+* Cleaning: validated lat/long to NYC bounds (40.5 – 40.9 / -74.25 – -73.7), removed listings with minimum_nights > 365, flagged $0-priced listings, excluded neighborhoods with fewer than 10 listings, created a cleaned_listings view via ALTER VIEW
+* Categorization: grouped minimum_nights into stay-duration bands using CASE statements; segmented hosts by activity level (full-time vs. part-time)
+* Analysis: identified high-earning neighborhoods, compared price/availability by room and host type, reviewed engagement trends by borough
 
 [Sales Analysis SQL](sql_queries/nyc_airbnb_project.sql)
 
 
 ### Key Insights
+
 ![](dashboard/Dashboard1.png)
 
-"Tribeca, Harlem, Williamsburg, and Midtown Manhattan deliver the best investment ROI" - through a mix of high demand and premium pricing.
-
-"Commercial hosts dominate the highest-value zones, while entire-home listings outperform specifically in Manhattan" - room type performance is borough-dependent, not universal.
-
-"Shared and private rooms outperform in budget boroughs" - the winning strategy flips outside Manhattan.
-
-"Part-time hosts average 112 available days a year - the strongest untapped onboarding segment" - a specific, actionable target for growth teams.
-
-"Outer boroughs show strong engagement but lower competition" - an under-served growth opportunity distinct from the premium-zone story.
+* "Tribeca, Harlem, Williamsburg, and Midtown Manhattan deliver the best investment ROI" - through a mix of high demand and premium pricing.
+* "Commercial hosts dominate the highest-value zones, while entire-home listings outperform specifically in Manhattan" - room type performance is borough-dependent, not universal.
+* "Shared and private rooms outperform in budget boroughs" - the winning strategy flips outside Manhattan.
+* "Part-time hosts average 112 available days a year - the strongest untapped onboarding segment" - a specific, actionable target for growth teams.
+* "Outer boroughs show strong engagement but lower competition" - an under-served growth opportunity distinct from the premium-zone story.
 
 
 ### Clear Recommendations
 
-
-Direct new investment toward Tribeca, Harlem, Williamsburg, and Midtown Manhattan first.
-
-Push entire-home inventory in Manhattan; push shared/private-room inventory in budget boroughs.
-
-Build a targeted onboarding campaign for part-time hosts, using top-reviewed listings as a coaching template.
-
-Prioritize outer-borough host recruitment where engagement is strong, but supply is thin.
+* Direct new investment toward Tribeca, Harlem, Williamsburg, and Midtown Manhattan first.
+* Push entire-home inventory in Manhattan; push shared/private-room inventory in budget boroughs.
+* Build a targeted onboarding campaign for part-time hosts, using top-reviewed listings as a coaching template.
+* Prioritize outer-borough host recruitment where engagement is strong, but supply is thin.
 
 
 Links: [Live dashboard](https://medium.com/@ajagunalliyu/airbnb-listings-analysis-in-new-york-city-with-sql-11beb1f8b615) · [Medium write-up](https://app.powerbi.com/view?r=eyJrIjoiZDYzZjY5NWQtMmE3NS00NjAxLTlkZTgtMWRkOTA5YTkzZDg2IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9)
