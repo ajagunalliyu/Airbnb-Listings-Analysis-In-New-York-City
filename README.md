@@ -18,7 +18,7 @@ Categorization: grouped minimum_nights into stay-duration bands using CASE state
 
 Analysis: identified high-earning neighborhoods, compared price/availability by room and host type, reviewed engagement trends by borough
 
-[Sales Analysis SQL](sql_script/nyc_airbnb_project.sql)
+[Sales Analysis SQL](sql_queries/nyc_airbnb_project.sql)
 
 
 ### Key Insights
