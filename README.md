@@ -1,4 +1,5 @@
 # Airbnb-Listings-Analysis-In-New-York-City
+![](assets/manhattan-skyline.jpg)
 
 Airbnb stakeholders needed to know where to invest, which hosts to support, and how room/host types actually perform across NYC - not from anecdote, but from the listings data itself. I cleaned and validated the public NYC listings dataset in SQL Server, built categorized views, and visualized the results in Power BI. The headline: Tribeca, Harlem, Williamsburg, and Midtown Manhattan offer the best ROI, commercial hosts dominate high-value zones, and the best onboarding targets are part-time hosts averaging 112 available days a year in under-served outer boroughs.
 
@@ -17,9 +18,11 @@ Categorization: grouped minimum_nights into stay-duration bands using CASE state
 
 Analysis: identified high-earning neighborhoods, compared price/availability by room and host type, reviewed engagement trends by borough
 
+[Sales Analysis SQL](sql_script/nyc_airbnb_project.sql)
+
 
 ### Key Insights
-
+![](dashboard/dashboard1.png)
 
 "Tribeca, Harlem, Williamsburg, and Midtown Manhattan deliver the best investment ROI" - through a mix of high demand and premium pricing.
 
