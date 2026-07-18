@@ -16,7 +16,6 @@ Airbnb investors and platform operators face three recurring questions with no d
 
 [Sales Analysis SQL](sql_queries/nyc_airbnb_project.sql)
 
-
 ### Key Insights
 
 ![](dashboard/Dashboard1.png)
